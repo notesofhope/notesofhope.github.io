@@ -27,12 +27,86 @@ body {
     margin: 2%;
 }
 
-footer {
+#music-header {
+    background-color: rgb(51,51,51);
+    color: white;
+    text-align: center;
+    margin: -8px;
+    padding: 1px;
+    margin-top: 8px;
+}
+
+#submit-rec {
+    background-color: rgb(51,51,51);
+    color: white;
+    text-align: center;
+    margin: -8px;
+}
+
+#orhead {
+   text-align: center;
+   font-size: 30px;
+   color: rgb(192,192,192);
+}
+
+#orhe {
+    border-bottom: solid;
+    border-bottom-color: rgb(51,51,51);
+    width: 50%;
+    margin: auto;
+}
+
+.reginp {
+    padding: 12px 20px;
+    margin: 8px 0;
+    width:65%;
+    background-color:rgb(245, 245, 245);
+    border-color: black;
+    display: block;
+    margin: auto;
+   
+}
+
+#byemail {
+    text-align: center;
+    color: rgb(255,114,114);
+}
+
+#subemail {
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+}
+
+
+#footer {
     background-color: rgb(255,114,114);
+    color:white;
+    position:absolute;
     padding: 10px 20px;
-    margin-top: 200px;
-    margin-right: -8px;
-    margin-left: -8px;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+#checkcontainer {
+    margin: auto;
+    width: 50%;
+}
+
+#checklabel {
+    color: rgb(255,114,114);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#submit {
+    background-color: rgb(255,114,114);
+    border: none;
+    color:white;
+    padding:16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 ul a:link {
@@ -51,6 +125,7 @@ ul a:active{
 <body>
 <header>
     <nav>
+        <!-- Dont forget to put <a> tags in order to link to pages-->
         <ul id="navigation">
             <li id="navbut"> <a href="index.html" >Home </a></li> 
             <li id="navbut"> <a href ="music.html"> Music </a></li>
@@ -62,6 +137,34 @@ ul a:active{
 
 </header>
 
-<footer> BLANK </footer>
+<div id="music-header"> 
+<h1> Music </h1>
+</div>
+
+<div>
+    <p> This is a placeholder for the page, I am still not entirely sure what direction I am going to take this page but I will figure that out tomorrow.</p> 
+</div>
+<div id="email">  
+<div id="submit-rec"> <h2> 
+Locate a Suggestion:
+</h2> </div>
+<div> <h3 id="orhead"> <div id="orhe"> Or </div> <div id="byemail"> <br> By Email:</div> <div id="subemail">Can't find something that interests you? Input your preferences and your Email and we will send you requests that match your style! 
+</h3></div> </div>
+<form>
+    <div id="checkcontainer"> 
+    <label id="checklabel"> What </label>
+    <input type="checkbox" id="checkbox"> 
+</div> 
+<br>
+    <input type="text"  class="reginp" placeholder="Email ">
+
+    <button onclick="pop();" id="submit"> Submit </button>
+        <script>
+            function pop() {
+                alert("Your email has been recorded")
+            }
+        </script>
+    </form>  </div>
+<div id="footer"> BLANK</div>
 </body>
 </html>
