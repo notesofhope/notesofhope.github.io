@@ -36,11 +36,47 @@ body {
     margin-top: 8px;
 }
 
+#findsong {
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    border: solid rgb(51,51,51);
+}
+
+#findsong td, #findsong th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#findsong th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(51,51,51);
+    color:white;
+    border-color: rgb(51,51,51);
+}
+
+#findsong td {
+    background-color: rgb(230, 230, 230);
+}
+
 #submit-rec {
     background-color: rgb(51,51,51);
     color: white;
     text-align: center;
     margin: -8px;
+}
+
+hr {
+    margin: -8px;
+    margin-top: 18px;
+    border: 2px dashed;
+    border-color: rgb(109, 109, 109);
+}
+
+#emform {
+    background-color: rgb(228, 228, 228);
 }
 
 #orhead {
@@ -79,16 +115,6 @@ body {
 }
 
 
-#footer {
-    background-color: rgb(255,114,114);
-    color:white;
-    position:absolute;
-    padding: 10px 20px;
-    bottom: 0;
-    left:0;
-    right:0;
-}
-
 #checkcontainer {
     margin: auto;
     width: 50%;
@@ -100,13 +126,19 @@ body {
     font-size: 20px;
 }
 
-#submit {
+#submit { 
     background-color: rgb(255,114,114);
     border: none;
     color:white;
     padding:16px 32px;
-    margin: 4px 2px;
-    cursor: pointer;
+   cursor: pointer;
+    
+}
+
+#btncont {
+    width: 10%;
+    margin: auto;
+    margin-top: 10px;
 }
 
 ul a:link {
@@ -121,6 +153,8 @@ ul a:active{
     color:white;
     text-decoration: none;
 }
+
+
 </style>
 <body>
 <header>
@@ -148,8 +182,87 @@ ul a:active{
 <div id="submit-rec"> <h2> 
 Locate a Suggestion:
 </h2> </div>
-<div> <h3 id="orhead"> <div id="orhe"> Or </div> <div id="byemail"> <br> By Email:</div> <div id="subemail">Can't find something that interests you? Input your preferences and your Email and we will send you requests that match your style! 
-</h3></div> </div>
+
+<!-- TABLE CONTENTS CONTAINER (Cuts down on size)-->
+
+
+<div id="table">
+<table id="findsong">
+<tr>
+    <th> Song </th>
+    <th> Due Date</th>
+    <th> Tags </th> 
+</tr>
+
+<tr> 
+<td> Placeholder </td> 
+<td> (4/13/22) </td> 
+<td> guitar, vocals </td> 
+</tr>
+
+<tr> 
+    <td> Placeholder </td> 
+    <td> (4/18/22) </td> 
+    <td> guitar, piano, vocals </td> 
+    </tr>
+
+
+<tr> 
+    <td> Placeholder </td> 
+    <td> (4/20/22) </td> 
+    <td> guitar, instramental </td> 
+    </tr>
+
+<tr> 
+    <td> Placeholder </td> 
+    <td> (4/24/22) </td> 
+    <td> guitar, violin, instramental  </td> 
+    </tr>
+
+<tr> 
+<td> Placeholder </td> 
+<td> (4/27/22) </td> 
+<td> piano, vocals</td> 
+</tr>
+
+<tr> 
+    <td> Placeholder </td> 
+    <td> (5/07/22) </td> 
+    <td> guitar, trumpet, instramental</td> 
+    </tr>
+
+<tr> 
+    <td> Placeholder </td> 
+    <td> (5/11/22) </td> 
+    <td> guitar, vocals, instramental </td> 
+        </tr>
+
+<tr> 
+    <td> Placeholder </td> 
+    <td> (5/17/22)</td> 
+    <td> piano, drums, instramental</td> 
+        </tr> 
+
+<tr> 
+    <td> Placeholder </td> 
+    <td> (5/21/22) </td> 
+    <td> drums, guitar, vocals</td> 
+        </tr>
+        
+<tr> 
+    <td> Placeholder </td> 
+    <td> (5/29/22) </td> 
+    <td> piano, instramental</td> 
+         </tr>
+
+</table>
+
+</div>
+
+<hr>
+
+<div id="emform">  <div id="orform"> <h3 id="orhead"> <div id="orhe"> Or </div> <div id="byemail"> <br> By Email:</div> <div id="subemail">Can't find something that interests you? Input your preferences and your Email and we will send you requests that match your style! 
+</h3></div>
 <form>
     <div id="checkcontainer"> 
     <label id="checklabel"> What </label>
@@ -158,13 +271,14 @@ Locate a Suggestion:
 <br>
     <input type="text"  class="reginp" placeholder="Email ">
 
-    <button onclick="pop();" id="submit"> Submit </button>
+    <div id="btncont"> <button onclick="pop();" id="submit"> Submit </button>
         <script>
             function pop() {
                 alert("Your email has been recorded")
             }
-        </script>
-    </form>  </div>
-<div id="footer"> BLANK</div>
+        </script> 
+    </form> <br> <br></div> </div>
+
+    
 </body>
 </html>

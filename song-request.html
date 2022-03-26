@@ -87,6 +87,7 @@ form label {
     width:50%;
     background-color:rgb(245, 245, 245);
     border-color: black;
+    font-family: "Helvetica", "sans-serif", monospace;
 }
 
 textarea {
@@ -159,13 +160,16 @@ ul a:active{
         <input type="text" class="reginp"> <br><br>
         <label> Due Date: </label> <br>
         <label class="sublabel"> (MM/DD/YY) </label> <br>
-        <input type="text"  class="reginp"> <br><br>
-        <label> Tags </label> <br>
+        <input type="date"  class="reginp"> <br><br>
+        <label> Tags: </label> <br>
         <label class="sublabel"> Separate with a comma </label> <br>
         <input type="text"  class="reginp" placeholder="Example: "> <br><br>
         <label> Special Message: </label> <br>
         <label class="sublabel"> (Optional) </label> <br>
         <textarea></textarea> <br><br>
+        <label> Email: </label> <br>
+        <label class="sublabel"> To recieve submissions </label> <br>
+        <input type="text"  class="reginp" placeholder="Email: "> <br><br>
     </form>
     <a href="thank-you.html"> 
         <button id="submit"> Submit </button>
